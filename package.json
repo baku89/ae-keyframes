@@ -1,7 +1,7 @@
 {
 	"name": "ae-keyframes",
 	"version": "0.0.0",
-	"description": "Matrix and vector library with immutable data types",
+	"description": "Parsing/printing keyframe text of Adobe After Effects in clipboard.",
 	"module": "./lib/esm/index.js",
 	"types": "./lib/esm/index.d.ts",
 	"sideEffects": false,
