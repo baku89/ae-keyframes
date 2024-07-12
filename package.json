@@ -1,0 +1,48 @@
+{
+	"name": "ae-keyframes",
+	"version": "0.0.0",
+	"description": "Matrix and vector library with immutable data types",
+	"module": "./lib/esm/index.js",
+	"types": "./lib/esm/index.d.ts",
+	"sideEffects": false,
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint",
+		"test": "vitest run",
+		"prepare": "npm run build",
+		"preversion": "npm run test",
+		"postversion": "git push && git push --tags && npm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/baku89/ae-keyframe.git"
+	},
+	"keywords": [
+		"aftereffects",
+		"adobe",
+		"keyframe",
+		"animation",
+		"clipboard"
+	],
+	"author": "Baku Hashimoto <mail@baku89.com>",
+	"files": [
+		"lib"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/baku89/ae-keyframe/issues"
+	},
+	"homepage": "https://baku89.github.io/ae-keyframe",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"@typescript-eslint/parser": "^6.21.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-simple-import-sort": "^12.0.0",
+		"eslint-plugin-unused-imports": "^3.0.0",
+		"prettier": "^3.2.5",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3",
+		"vitest": "^1.2.2"
+	}
+}
