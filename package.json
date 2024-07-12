@@ -1,6 +1,6 @@
 {
 	"name": "ae-keyframes",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Parsing/printing keyframe text of Adobe After Effects in clipboard.",
 	"module": "./lib/esm/index.js",
 	"types": "./lib/esm/index.d.ts",
