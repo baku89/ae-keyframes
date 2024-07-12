@@ -1,11 +1,11 @@
-# ae-keyframe
+# ae-keyframes
 
-ae-keyframe is a library for parsing/encoding text-based keyframe data that can be copied to the clipboard from After Effects.
+ae-keyframes is a library for parsing/encoding text-based keyframe data that can be copied to the clipboard from After Effects.
 
 ## Installation
 
 ```bash
-npm install ae-keyframe
+npm install ae-keyframes
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install ae-keyframe
 ### Parsing keyframes from clipboard data
 
 ```ts
-import {parseAEKeyframes} from 'ae-keyframe'
+import {parseAEKeyframes} from 'ae-keyframes'
 
 const clipboardData = navigator.clipboard.readText()
 
@@ -23,7 +23,7 @@ const keyframes = parseAEKeyframes(clipboardData)
 ### Encoding keyframes to clipboard data
 
 ```ts
-import {printAEKeyframes, AEKeyframeData} from 'ae-keyframe'
+import {printAEKeyframes, AEKeyframeData} from 'ae-keyframes'
 
 const keyframes: AEKeyframeData = {
 	frameRate: 30,
