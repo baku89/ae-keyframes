@@ -17,7 +17,54 @@ import {parseAEKeyframes} from 'ae-keyframes'
 
 const clipboardData = navigator.clipboard.readText()
 
+console.log(clipboardData)
+/*
+Adobe After Effects 9.0 Keyframe Data
+
+	Units Per Second	24
+	Source Width	1920
+	Source Height	1280
+	Source Pixel Aspect Ratio	1
+	Comp Pixel Aspect Ratio	1
+
+Layer
+Transform	Scale
+	Frame	X percent	Y percent	Z percent
+	8	100	100	100
+	27	180 180 100
+
+Transform	Rotation
+	Frame	degrees
+	27	22
+
+End of Keyframe Data
+
+ */
+
 const keyframes = parseAEKeyframes(clipboardData)
+
+console.log(keyframes)
+/*
+{
+	frameRate: 24,
+	compSize: [1920, 1280],
+	sourcePixelAspectRatio: 1,
+	compPixelAspectRatio: 1,
+	layers: [
+		{
+			transform: {
+				scale: [
+					{frame: 8, value: [100, 100, 100]},
+					{frame: 27, value: [180, 180, 100]},
+				],
+				rotation: [
+					{frame: 27, value: 22},
+				],
+			},
+		},
+	],
+}
+ */
 ```
 
 ### Encoding keyframes to clipboard data
